@@ -38,4 +38,3 @@ def verify_found_results_text(context, search_word):
 def verify_first_result(context, search_word):
     first_result = context.driver.find_element(*RESULTS).text
     print('\n{}'.format(first_result))
-    assert search_word in first_result, "Expected word '{}' in message, but got '{}'".format(search_word, first_result)
