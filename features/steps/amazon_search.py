@@ -5,6 +5,7 @@ SEARCH_INPUT =(By.ID, 'twotabsearchtextbox')
 SEARCH_ICON =(By.XPATH, "//input[@value = 'Go']")
 SEARCH_RESULT =(By.XPATH, "//span[@class='a-color-state a-text-bold']")
 
+
 @given('Open Amazon page')
 def open_amazon(context):
     context.driver.get('https://www.amazon.com/')

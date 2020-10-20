@@ -40,5 +40,3 @@ def verify_result(context):
 
 
 
-
-
