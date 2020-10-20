@@ -36,7 +36,7 @@ def verify_result(context):
 # 'Privacy Notice' Link => (By.XPATH, "//a[contains(@href, 'register_notification_privacy')]")
 # 'Sign In' link => (By.CSS_SELECTOR, "a.a-link-emphasis")
 
-
+#
 
 
 
