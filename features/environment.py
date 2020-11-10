@@ -1,5 +1,7 @@
 from selenium import webdriver
+from selenium.webdriver.support.wait import WebDriverWait
 
+from app.application import Application
 
 def browser_init(context):
     """
@@ -9,9 +11,12 @@ def browser_init(context):
     # context.browser = webdriver.Safari()
     # context.browser = webdriver.Firefox()
 
+# H.W. #7 - Part #0.) - - Repeat everything I coded during the class.
     context.driver.maximize_window()
     context.driver.implicitly_wait(4)
 
+    context.app = Application(context.driver)
+# This is the end of H.W. #7 - Part #0.). Thank you!
 
 def before_scenario(context, scenario):
     print('\nStarted scenario: ', scenario.name)
@@ -30,3 +35,6 @@ def after_step(context, step):
 def after_scenario(context, feature):
     context.driver.delete_all_cookies()
     context.driver.quit()
+
+
+
